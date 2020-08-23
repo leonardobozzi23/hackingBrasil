@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>HackingBrasil</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png">
+                <hr>
+                <img src="img/prog_header.png">
+            </div>
+            <div class="info">
+                <img src="img/assets_calendario.png">
+                <img src="img/assets_info.png">
+            </div>
+        </div>
+        <div class="conteudo-header">
+            <p> Primeiro evento 100% on-line na área da programação, com os melhores profissionais da área.<br><br>
+                Serão palestras sobre InfoSec, Web Development, Software Engineering,
+                Infraestrutura, Mercado de trabalho e entre outros nichos da tecnologia
+                mais atual no mercado de tecnologia!</p>
+            <div class="inscricao">
+                <img src="img/flatheader.png">
+                <button>FAÇA_SUA_INSCRIÇÃO</button>
+
+            </div>
+        </div>
+        </header>
+        <div class="modal" id="modal">
+            <div class="escrita">
+               <img src="img/alex.png">
+                <h2>Alex Teixeira</h2>
+                <p>
+                    <19 anos, São Roque/SP />
+                </p>
+                <br>
+                <br>
+                <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum orci in velit, integer convallis adipiscing. Arcu blandit in diam donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit. Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel iaculis vitae quis.</p>
+                <span onClick="popupOffAlex()">FECHAR</span>
+            </div>
+        </div>
+        
+        <!--Modal Juarez -->
+        <div class="modal" id="modalJuarez">
+            <div class="escritaJuarez">
+               <img src="img/juarez.png">
+                <h2>Juarez Caetano </h2>
+                <p>
+                    <19 anos, São Roque/SP />
+                </p>
+                <br>
+                <br>
+                <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum orci in velit, integer convallis adipiscing. Arcu blandit in diam donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit. Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel iaculis vitae quis.</p>
+                <span onClick="popupOffJuarez()">FECHAR</span>
+            </div>
+        </div>
+        
+        <!--Modal Leonardo -->
+        <div class="modal" id="modalLeonardo">
+            <div class="escritaLeonardo">
+               <img src="img/leonardo.png">
+                <h2>Leonardo Bozzi</h2>
+                <p>
+                    <20 anos, São Roque/SP />
+                </p>
+                <br>
+                <br>
+                <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum orci in velit, integer convallis adipiscing. Arcu blandit in diam donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit. Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel iaculis vitae quis.</p>
+                <span onClick="popupOffLeonardo()">FECHAR</span>
+            </div>
+        </div>
+        <!--Modal Caio -->
+        <div class="modal" id="modalCaio">
+            <div class="escritaCaio">
+               <img src="img/caio.png">
+                <h2>Caio Oliveira</h2>
+                <p>
+                    <19 anos, São Roque/SP />
+                </p>
+                <br>
+                <br>
+                <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum orci in velit, integer convallis adipiscing. Arcu blandit in diam donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit. Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel iaculis vitae quis.</p>
+                <span onClick="popupOffCaio()">FECHAR</span>
+            </div>
+        </div>
+        
+        <!--Modal Guilherme -->
+        <div class="modal" id="modalGuilherme">
+            <div class="escritaGuilherme">
+               <img src="img/guilherme.png">
+                <h2>Guilherme Moreira</h2>
+                <p>
+                    <19 anos, São Roque/SP />
+                </p>
+                <br>
+                <br>
+                <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum orci in velit, integer convallis adipiscing. Arcu blandit in diam donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit. Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel iaculis vitae quis.</p>
+                <span onClick="popupOffGuilherme()">FECHAR</span>
+            </div>
+        </div>
+        
+        <h1>Palestrantes:</h1>
+        <div class="palestrantes">
+            <img onClick="popupOnJuarez()" src="img/juarez.png">
+            <img onClick="popupOnGuilherme()" src="img/guilherme.png">
+            <img onClick="popupOnLeonardo()" src="img/leonardo.png">
+            <img onClick="popupOnCaio()" src="img/caio.png">
+            <img onClick="popupOnAlex()" src="img/alex.png">
+
+        </div>
+
+        <div class="palestrantes-nome">
+
+            <p>ANALISTA: Juarez</p>
+            <p>CTO: Guilherme</p>
+            <p>DEV: Leonardo</p>
+            <p>DEV-SENIOR: Caio</p>
+            <p>UI-DESIGNER: Alex</p>
+        </div>
+        <div class="goToProg">
+            <button>PROGRAMAÇÃO_DO_EVENTO</button>
+        </div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>

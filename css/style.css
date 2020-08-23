@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #1F1F1F;
+    --green: #2ee54c;
+    --font-three: #8844ee;
+    --button-primary: #683da7;
+    --button-secondary: #413b99;
+    --title: #686672;
+}
+
+body {
+    background: var(--background);
+}
+
+.header-container {
+
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header-container .logo {
+    width: 300px;
+    flex: 1;
+}
+
+.header-container .logo img {
+    width: 50%;
+    margin: 10px 0 15px 45px;
+
+}
+
+.header-container .logo hr {
+    width: 55%;
+    margin-left: 30px;
+    border-color: var(--button-primary);
+}
+
+.header-container .info {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px
+}
+
+.conteudo-header {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    height: 350px;
+    flex-grow: 0;
+    width: 98vw;
+}
+
+.conteudo-header p {
+    width: 500px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+}
+
+.conteudo-header img {
+    flex: 1;
+    max-width: 400px;
+    align-self: flex-start;
+}
+
+.conteudo-header button {
+    align-self: flex-end;
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background: var(--button-primary);
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    margin: 25px;
+}
+
+.conteudo-header .inscricao {
+    height: 350px;
+    width: 400px;
+}
+
+.palestrantes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 100vw;
+
+}
+
+.palestrantes img {
+    cursor: pointer;
+}
+
+.palestrantes-nome {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    color: var(--green);
+}
+
+h1 {
+    margin: 60px 0 0 15px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--title)
+}
+
+.goToProg {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.goToProg button {
+    height: 50px;
+    border-radius: 8px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 15px;
+    color: #fff;
+    background: var(--button-secondary);
+    border: none;
+    outline: none;
+}
+
+.modal {
+    width: 100vw;
+    height: 200vh;
+    position: absolute;
+    background: #00000070;
+    top: 0;
+    animation-name: fundo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.modal .escrita {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    padding: 50px 100px;
+    background: #2F2E41;
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.modal .escrita p {
+    color: #2ee54c;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.modal .escrita .sobre {
+    color: #fff;
+    font-size: 11px;
+}
+
+.modal .escrita span {
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    text-align: center;
+    width: 500px;
+    left: 0;
+    background: #2ee54c;
+    padding: 15px;
+    border-radius: 0 0 25px 25px;
+    color: #000;
+    transition: all .8s ease-in-out;
+}
+
+.modal .escrita span:hover {
+    background: #2ee00c;
+}
+
+@keyframes fundo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal .escritaLeonardo {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    padding: 50px 100px;
+    background: #2F2E41;
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+.modal .escritaLeonardo p {
+    color: #2ee54c;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.modal .escritaLeonardo .sobre {
+    color: #fff;
+    font-size: 11px;
+}
+
+.modal .escritaLeonardo span {
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    text-align: center;
+    width: 500px;
+    left: 0;
+    background: #2ee54c;
+    padding: 15px;
+    border-radius: 0 0 25px 25px;
+    color: #000;
+    transition: all .8s ease-in-out;
+}
+.modal .escritaJuarez {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    padding: 50px 100px;
+    background: #2F2E41;
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+.modal .escritaJuarez p {
+    color: #2ee54c;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.modal .escritaJuarez .sobre {
+    color: #fff;
+    font-size: 11px;
+}
+
+.modal .escritaJuarez span {
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    text-align: center;
+    width: 500px;
+    left: 0;
+    background: #2ee54c;
+    padding: 15px;
+    border-radius: 0 0 25px 25px;
+    color: #000;
+    transition: all .8s ease-in-out;
+}
+
+.modal .escritaGuilherme {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    padding: 50px 100px;
+    background: #2F2E41;
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+.modal .escritaGuilherme p {
+    color: #2ee54c;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.modal .escritaGuilherme .sobre {
+    color: #fff;
+    font-size: 11px;
+}
+
+.modal .escritaGuilherme span {
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    text-align: center;
+    width: 500px;
+    left: 0;
+    background: #2ee54c;
+    padding: 15px;
+    border-radius: 0 0 25px 25px;
+    color: #000;
+    transition: all .8s ease-in-out;
+}
+.modal .escritaCaio {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    padding: 50px 100px;
+    background: #2F2E41;
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+.modal .escritaCaio p {
+    color: #2ee54c;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.modal .escritaCaio .sobre {
+    color: #fff;
+    font-size: 11px;
+}
+
+.modal .escritaCaio span {
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    text-align: center;
+    width: 500px;
+    left: 0;
+    background: #2ee54c;
+    padding: 15px;
+    border-radius: 0 0 25px 25px;
+    color: #000;
+    transition: all .8s ease-in-out;
+}
