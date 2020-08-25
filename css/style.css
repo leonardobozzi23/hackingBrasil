@@ -148,7 +148,7 @@ h1 {
     background: var(--button-primary);
     border-radius: 0;
 }
-
+/*Inicio dos Modal's*/
 .modal {
     width: 100vw;
     height: 200vh;
@@ -523,11 +523,11 @@ h1 {
     width: 530px;
 }
 .sobre .evento .texto-evento h2{
-    font-size: 40px;
+    font-size: 38px;
     width: 600px;
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    
+    width: 500px;
 }
 
 .sobre .evento .texto-evento p {
@@ -536,6 +536,7 @@ h1 {
     font-size: 23px;
     margin-top: 70px;
     font-weight: 700;
+    width: 380px;
 
 }
 
@@ -575,6 +576,7 @@ h1 {
     font-size: 23px;
     margin: 70px 0 0 30px;
     font-weight: 700;
+    width: 380px;
 }
 
 .sobre .conhecimento{
@@ -590,6 +592,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-weight: 700;
+    width: 380px;
 }
 .sobre .conhecimento h2{
     align-self: flex-start;

@@ -1,0 +1,47 @@
+@media screen and (max-width: 414px) {
+    body {
+        width: 1150px;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .header-container .logo img {
+        width: 150px;
+
+    }
+
+    .header-container .logo hr {
+        width: 35%;
+    }
+
+.conteudo-header {
+    width: 100%;
+}
+.palestrantes {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 40%;
+   
+    
+
+}
+
+.palestrantes img {
+    cursor: pointer;
+    margin: 20px 40px
+    
+}
+
+.palestrantes-nome {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+    
+}
+}
