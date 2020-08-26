@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 :root {
@@ -19,7 +20,7 @@ body {
 
 .header-container {
 
-    width: 100vw;
+    width: 99vw;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -47,7 +48,7 @@ body {
     flex: 1;
     display: flex;
     justify-content: space-around;
-    max-width: 500px
+    max-width: 400px;
 }
 
 .conteudo-header {
@@ -57,6 +58,7 @@ body {
     height: 350px;
     flex-grow: 0;
     width: 98vw;
+    
 }
 
 .conteudo-header p {
@@ -101,7 +103,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
-    width: 100vw;
+    width: 98vw;
 
 }
 
@@ -110,28 +112,31 @@ body {
 }
 
 .palestrantes-nome {
-    width: 100%;
+    
     display: flex;
     justify-content: space-around;
-    width: 100vw;
+    width: 98vw;
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     color: var(--green);
 }
 
 h1 {
-    margin: 60px 0 0 15px;
+    margin: 60px 0 0 50px;
     font-family: 'Roboto', sans-serif;
-    color: var(--title)
+    color: var(--title);
+    width: 50%
 }
-
-.goToProg {
+.container-prog{
+    width: 1120px;
+}
+.container-prog .goToProg {
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin: 30px auto;
 }
 
-.goToProg button {
+.container-prog .goToProg button {
     height: 50px;
     border-radius: 8px;
     font-family: 'Roboto Mono', monospace;
@@ -150,7 +155,7 @@ h1 {
 }
 /*Inicio dos Modal's*/
 .modal {
-    width: 100vw;
+    width: 99vw;
     height: 200vh;
     position: absolute;
     background: #00000070;
@@ -203,7 +208,18 @@ h1 {
 .modal .escrita span:hover {
     background: #2ee00c;
 }
-
+.modal .escritaLeonardo span:hover {
+    background: #2ee00c;
+}
+.modal .escritaJuarez span:hover {
+    background: #2ee00c;
+}
+.modal .escritaCaio span:hover {
+    background: #2ee00c;
+}
+.modal .escritaGuilherme span:hover {
+    background: #2ee00c;
+}
 @keyframes fundo {
     from {
         opacity: 0;
@@ -553,6 +569,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-weight: 700;
+/*    overflow: hidden;*/
 }
 .sobre .objetivo h2{
     align-self: flex-start;
@@ -581,7 +598,7 @@ h1 {
 
 .sobre .conhecimento{
     display: flex;
-    width: 1000px;
+    width: 1050px;
     margin: 0 auto ;
     
 }
@@ -593,6 +610,7 @@ h1 {
     color: #fff;
     font-weight: 700;
     width: 380px;
+/*    overflow: hidden;*/
 }
 .sobre .conhecimento h2{
     align-self: flex-start;
@@ -623,10 +641,25 @@ margin-top: 150px;
 }
 
 .footer img {
-    margin: 0 10px 0 0;
+    margin: 0 10px 10px 0;
     cursor: pointer;
+    width: 40px;
 }
 
 .footer .sociais{
     margin-left: 40px
+}
+
+.container {
+    margin-top: 40px auto;
+    max-width: 99vw;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background: var(--button-primary);
 }

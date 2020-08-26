@@ -1,3 +1,16 @@
+@media screen and (min-width: 1400px) {
+     .goToProg {
+        width: 1410px;
+        margin: 40px 50px;
+    }
+}
+@media screen and (max-width: 1200px){
+     .goToProg {
+        width: 1200px;
+        margin: 40px 50px;
+    }
+}
+
 @media screen and (max-width: 1020px) {
     .header-container {
         width: 1120px;
@@ -34,7 +47,7 @@
     }
 
     .goToProg {
-        width: 100%;
+        width: 1180px;
         margin: 40px 50px;
     }
 
@@ -97,6 +110,10 @@
         width: 920px;
         margin: 0;
     }
+     .goToProg {
+        width: 1180px;
+        margin: 40px 50px;
+    }
 }
 
 /*960px 780px 550px 320px  */
@@ -104,16 +121,20 @@
     .palestrantes {
         display: flex;
         justify-content: space-around;
-        margin: 0 200px;
-        max-width: 800px;
+        margin: 0 170px;
+        width: 900px;
     }
 
     .palestrantes-nome {
-        width: 1020px;
-        margin: 0 10%;
+        width: 1040px;
+        margin: 0 8%;
 
     }
 
+    .palestrantes img{
+        margin: 0 30px
+    }
+    
     .sobre .horizontal {
         margin: 20px 0;
     }
@@ -132,32 +153,48 @@
         width: 1020px;
         margin: 0 0 0 100px;
     }
+     .goToProg {
+        width: 1180px;
+        margin: 40px 50px;
+    }
 }
 
 @media screen and (max-width: 550px) {
     .palestrantes {
         display: flex;
         justify-content: space-around;
-        margin: 0 295px;
+        margin: 0 140px;
         max-width: 1000px;
     }
 
     .palestrantes-nome {
-        width: 1000px;
-        margin: 0 10%;
-
+        width: 1020px;
+        margin: 0 17%;
+    }
+    .palestrantes-nome p{
+        width: 170px;
+        margin: 0 4px 0 0;
+        font-size: 0.97em
+    }
+     .goToProg {
+        width: 1180px;
+        margin: 40px 50px;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     .palestrantes {
-        margin: 0 405px;
-        max-width: 1000px;
+        margin: 20px 400px 0 ;
+        max-width: 1400px;
+    }
+        .palestrantes img{
+        margin:0 35px
     }
 
     .palestrantes-nome {
-        width: 1050px;
+        width: 1080px;
         margin: 0 10%;
+        font-size: 14px
 
     }
 
@@ -168,4 +205,44 @@
     }
 
     
+}
+
+@media screen and (max-width: 320px) {
+    .palestrantes {
+        margin: 0 405px;
+        max-width: 1400px;
+    }
+
+    .palestrantes-nome {
+        width: 1050px;
+        margin: 0 10%;
+
+    }
+     .goToProg {
+        width: 1180px;
+        margin: 40px 50px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .palestrantes {
+        margin: 15px auto 0;
+    }
+
+    .palestrantes-nome {
+        width: 1050px;
+        margin: 0 20%;
+
+    }
+    .palestra{
+        margin: 0 100px;
+        width: 980px;
+        height: 150px;
+        display: block;
+    }
+
+     .goToProg {
+        width: 1180px;
+        margin: 40px 50px;
+    }
 }
