@@ -1,47 +1,3 @@
-@media screen and (max-width: 414px) {
-    body {
-        width: 1150px;
-    }
-
-    .header-container {
-        width: 100%;
-    }
-
-    .header-container .logo img {
-        width: 150px;
-
-    }
-
-    .header-container .logo hr {
-        width: 35%;
-    }
-
-    .conteudo-header {
-        width: 100%;
-    }
-
-    .palestrantes {
-        display: flex;
-        justify-content: space-around;
-        margin: 0 auto;
-        width: 40%;
-
-
-
-    }
-
-    .palestrantes img {
-        cursor: pointer;
-        margin: 20px 40px
-    }
-
-    .palestrantes-nome {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-}
-
 @media screen and (max-width: 1020px) {
     .header-container {
         width: 1120px;
@@ -94,7 +50,7 @@
         margin: 0;
         width: 900px;
     }
-    
+
     .sobre .horizontal {
         margin: 20px 0;
     }
@@ -124,46 +80,92 @@
     .palestrantes {
         display: flex;
         justify-content: space-around;
-        margin: 0 100px;
-        width: 100%;
+        margin: 0 170px;
+        max-width: 800px;
     }
-       .palestrantes-nome {
-        width: 1040px;;
+
+    .palestrantes-nome {
+        width: 1020px;
 
     }
+
     .sobre .horizontal {
         margin: 20px 0;
     }
+
     .sobre hr {
         width: 920px;
         margin: 0;
     }
 }
+
 /*960px 780px 550px 320px  */
 @media screen and (max-width: 780px) {
-     .palestrantes {
+    .palestrantes {
         display: flex;
         justify-content: space-around;
-        margin: 0 100px;
-        width: 930px;
+        margin: 0 200px;
+        max-width: 800px;
     }
-       .palestrantes-nome {
-        width: 1030px;;
+
+    .palestrantes-nome {
+        width: 1020px;
+        margin: 0 10%;
 
     }
+
     .sobre .horizontal {
         margin: 20px 0;
     }
+
     .sobre hr {
         width: 920px;
         margin: 0;
     }
+
     .goToProg {
         width: 1030px;
         margin: 40px 50px;
     }
+
     .conteudo-header {
         width: 1020px;
         margin: 0 0 0 100px;
     }
+}
+
+@media screen and (max-width: 550px) {
+    .palestrantes {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 295px;
+        max-width: 1000px;
+    }
+
+    .palestrantes-nome {
+        width: 1000px;
+        margin: 0 10%;
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .palestrantes {
+        margin: 0 405px;
+        max-width: 1000px;
+    }
+
+    .palestrantes-nome {
+        width: 1050px;
+        margin: 0 10%;
+
+    }
+
+    .footer {
+        margin-top: 150px;
+        margin-bottom:50px;
+        width: 500px
+    }
+
+    
 }

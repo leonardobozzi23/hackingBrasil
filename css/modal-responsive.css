@@ -1,9 +1,9 @@
 @media screen and (max-width: 1020px) {
     .modal {
         width: 1130px;
-        height: 200vh;
+        height: 2690px;
         position: absolute;
-        background: none;
+        background: #00000070;
         top: 0;
         animation-name: fundo;
         animation-duration: 1s;
@@ -12,7 +12,7 @@
 
     .modal .escrita {
         height: 550px;
-        top: 40%;
+        top: 15%;
 
     }
 
@@ -23,7 +23,7 @@
 
     .modal .escritaLeonardo {
         height: 550px;
-        top: 40%;
+        top: 16%;
 
     }
 
@@ -37,7 +37,7 @@
     .modal .escritaJuarez {
 
         height: 550px;
-        top: 40%;
+        top: 15%;
 
 
     }
@@ -49,7 +49,7 @@
 
     .modal .escritaGuilherme {
         height: 550px;
-        top: 40%;
+        top: 15%;
     }
 
     .modal .escritaGuilherme p {
@@ -62,7 +62,7 @@
         width: 500px;
         height: 550px;
         position: absolute;
-        top: 40%;
+        top: 15%;
 
     }
 
