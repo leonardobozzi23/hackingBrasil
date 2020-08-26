@@ -1,0 +1,74 @@
+@media screen and (max-width: 1020px) {
+    .modal {
+        width: 1130px;
+        height: 200vh;
+        position: absolute;
+        background: none;
+        top: 0;
+        animation-name: fundo;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+
+    .modal .escrita {
+        height: 550px;
+        top: 40%;
+
+    }
+
+    .modal .escrita p {
+        margin: 0;
+
+    }
+
+    .modal .escritaLeonardo {
+        height: 550px;
+        top: 40%;
+
+    }
+
+    .modal .escritaLeonardo p {
+
+        margin: 0;
+
+    }
+
+
+    .modal .escritaJuarez {
+
+        height: 550px;
+        top: 40%;
+
+
+    }
+
+    .modal .escritaJuarez p {
+        margin: 0;
+
+    }
+
+    .modal .escritaGuilherme {
+        height: 550px;
+        top: 40%;
+    }
+
+    .modal .escritaGuilherme p {
+        margin: 0;
+
+    }
+
+
+    .modal .escritaCaio {
+        width: 500px;
+        height: 550px;
+        position: absolute;
+        top: 40%;
+
+    }
+
+    .modal .escritaCaio p {
+        margin: 0;
+
+    }
+
+}
