@@ -16,32 +16,154 @@
         width: 35%;
     }
 
-.conteudo-header {
-    width: 100%;
-}
-.palestrantes {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    width: 40%;
-   
-    
+    .conteudo-header {
+        width: 100%;
+    }
 
+    .palestrantes {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 40%;
+
+
+
+    }
+
+    .palestrantes img {
+        cursor: pointer;
+        margin: 20px 40px
+    }
+
+    .palestrantes-nome {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
-.palestrantes img {
-    cursor: pointer;
-    margin: 20px 40px
+@media screen and (max-width: 1020px) {
+    .header-container {
+        width: 1120px;
+    }
+
+    .header-container .logo img {
+        width: 250px;
+
+    }
+
+    .header-container .logo hr {
+        width: 35%;
+    }
+
+    .palestrantes {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 55px;
+        width: 100%;
+    }
+
+    .palestrantes img {
+        cursor: pointer;
+        margin: 20px 20px;
+
+
+    }
+
+    .palestrantes-nome {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 58px;
+    }
+
+    .goToProg {
+        width: 100%;
+        margin: 40px 50px;
+    }
+
+    .sobre {
+        margin: 20px 130px;
+    }
+
+    .sobre h1 {
+        margin: 20px 0;
+    }
+
+    .sobre hr {
+        margin: 0;
+        width: 900px;
+    }
     
+    .sobre .horizontal {
+        margin: 20px 0;
+    }
+
+    .sobre .evento .texto-evento h2 {
+        font-size: 30px;
+        width: 400px;
+    }
+
+    .sobre .texto-objetivo h2 {
+        font-size: 30px;
+        width: 400px;
+    }
+
+    .sobre .texto-conhecimento h2 {
+        font-size: 30px;
+        width: 400px;
+    }
+
+    .conteudo-header {
+        width: 100%;
+        margin: 0 0 0 100px;
+    }
 }
 
-.palestrantes-nome {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    
-    
-    
-    
+@media screen and (max-width: 920px) {
+    .palestrantes {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 100px;
+        width: 100%;
+    }
+       .palestrantes-nome {
+        width: 1040px;;
+
+    }
+    .sobre .horizontal {
+        margin: 20px 0;
+    }
+    .sobre hr {
+        width: 920px;
+        margin: 0;
+    }
 }
+/*960px 780px 550px 320px  */
+@media screen and (max-width: 780px) {
+     .palestrantes {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 100px;
+        width: 930px;
+    }
+       .palestrantes-nome {
+        width: 1030px;;
+
+    }
+    .sobre .horizontal {
+        margin: 20px 0;
+    }
+    .sobre hr {
+        width: 920px;
+        margin: 0;
+    }
+    .goToProg {
+        width: 1030px;
+        margin: 40px 50px;
+    }
+    .conteudo-header {
+        width: 1020px;
+        margin: 0 0 0 100px;
+    }
 }
