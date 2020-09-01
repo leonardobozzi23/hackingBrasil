@@ -1,13 +1,28 @@
 @media screen and (min-width: 1400px) {
-     .goToProg {
+    .goToProg {
         width: 1410px;
         margin: 40px 50px;
     }
 }
-@media screen and (max-width: 1200px){
-     .goToProg {
+
+@media screen and (max-width: 1200px) {
+    .goToProg {
         width: 1200px;
         margin: 40px 50px;
+    }
+
+    .container {
+        margin-left: 100px;
+    }
+
+    .sobre .texto-objetivo h2 {
+        font-size: 38px;
+        width: 500px;
+    }
+
+    .sobre .texto-conhecimento h2 {
+        font-size: 38px;
+        width: 500px;
     }
 }
 
@@ -87,6 +102,10 @@
         width: 100%;
         margin: 0 0 0 100px;
     }
+    .header-prog, .subs{
+        width: 1220px;
+    }
+    
 }
 
 @media screen and (max-width: 920px) {
@@ -110,7 +129,8 @@
         width: 920px;
         margin: 0;
     }
-     .goToProg {
+
+    .goToProg {
         width: 1180px;
         margin: 40px 50px;
     }
@@ -131,10 +151,10 @@
 
     }
 
-    .palestrantes img{
+    .palestrantes img {
         margin: 0 30px
     }
-    
+
     .sobre .horizontal {
         margin: 20px 0;
     }
@@ -153,9 +173,15 @@
         width: 1020px;
         margin: 0 0 0 100px;
     }
-     .goToProg {
+
+    .goToProg {
         width: 1180px;
         margin: 40px 50px;
+    }
+}
+@media screen and (max-width:700px){
+    main .day{
+        margin: 20px 50px;
     }
 }
 
@@ -171,40 +197,47 @@
         width: 1020px;
         margin: 0 17%;
     }
-    .palestrantes-nome p{
+
+    .palestrantes-nome p {
         width: 170px;
         margin: 0 4px 0 0;
         font-size: 0.97em
     }
-     .goToProg {
+
+    .goToProg {
         width: 1180px;
         margin: 40px 50px;
+    }
+
+    .container {
+        margin: 35px auto;
+
     }
 }
 
 @media screen and (max-width: 360px) {
     .palestrantes {
-        margin: 20px 400px 0 ;
+        margin: 20px 400px 0;
         max-width: 1400px;
     }
-        .palestrantes img{
-        margin:0 35px
+
+    .palestrantes img {
+        margin: 0 35px
     }
 
     .palestrantes-nome {
         width: 1080px;
         margin: 0 10%;
         font-size: 14px
-
     }
 
     .footer {
         margin-top: 150px;
-        margin-bottom:50px;
+        margin-bottom: 50px;
         width: 500px
     }
 
-    
+
 }
 
 @media screen and (max-width: 320px) {
@@ -218,7 +251,8 @@
         margin: 0 10%;
 
     }
-     .goToProg {
+
+    .goToProg {
         width: 1180px;
         margin: 40px 50px;
     }
@@ -234,15 +268,54 @@
         margin: 0 20%;
 
     }
-    .palestra{
+
+    .palestra {
         margin: 0 100px;
         width: 980px;
         height: 150px;
         display: block;
     }
 
-     .goToProg {
+    .goToProg {
         width: 1180px;
         margin: 40px 50px;
     }
+}
+
+@media screen and (max-width: 280px) {
+    .container {
+        margin: 0;
+        width: 240px;
+    }
+
+    .palestra {
+        margin: 0 100px;
+        width: 920px;
+    }
+
+    .palestrantes-nome {
+        width: 1020px;
+        margin: 0 20%;
+    }
+
+    .goToProg {
+        width: 1000px;
+        margin: 40px 50px;
+    }
+
+    .sobre .evento {
+        width: 900px;
+    }
+
+    .sobre .conhecimento {
+        width: 900px;
+    }
+
+    .sobre .objetivo {
+        width: 900px;
+    }
+    .header-prog, .subs{
+        width: 1020px;
+    }
+    
 }

@@ -29,7 +29,7 @@ function popupOffJuarez(){
 
 popupOffJuarez();
 
-//modal leonardp
+//modal leonardo
 function popupOnLeonardo(){
   leonardo.style.display = "block";
 }
