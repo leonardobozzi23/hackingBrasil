@@ -128,7 +128,7 @@ h1 {
     width: 50%
 }
 .container-prog{
-    width: 1120px;
+    width: 1350px;
 }
 .container-prog .goToProg {
     display: flex;
@@ -460,7 +460,7 @@ h1 {
     padding: 15px;
     width: 400px;
     height: 50px;
-    border: 1px solid var(--green);
+    border: 2px solid #8844EE;
     border-radius: 8px;
     background: var(--title);
     color: #fff;
@@ -484,7 +484,7 @@ h1 {
     margin: 60px 0;
     width: 300px;
     height: 50px;
-    background: var(--button-secondary);
+    background: #8844ee;
     border: none;
     border-radius: 10px;
     color: #fff;
@@ -508,7 +508,7 @@ h1 {
 }
 
 .sobre hr{
-    margin: 20px;
+    margin: 20px auto;
     border-color: var(--button-primary);
     
 }
@@ -535,12 +535,11 @@ h1 {
     
 }
 .sobre .evento .texto-evento{
-    margin-left: 200px;
-    width: 530px;
+    margin-left: 180px;
+    width: 400px;
 }
 .sobre .evento .texto-evento h2{
     font-size: 38px;
-    width: 600px;
     font-family: 'Roboto', sans-serif;
     color: #fff;
     width: 500px;
@@ -580,18 +579,18 @@ h1 {
 }
 
 .sobre .texto-objetivo h2{
-    font-size: 40px;
-    width: 600px;
+    font-size: 38px;
+    width: 400px;
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 180px;
 }
 
 .sobre .texto-objetivo p{
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 23px;
-    margin: 70px 0 0 30px;
+    margin: 70px 0 0 180px;
     font-weight: 700;
     width: 380px;
 }
@@ -622,17 +621,17 @@ h1 {
 
 .sobre .texto-conhecimento h2{
     font-size: 40px;
-    width: 600px;
+    width: 480px;
     font-family: 'Roboto', sans-serif;
     color: #fff;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 220px;
 }
 
 .sobre .texto-conhecimento p{
     font-family: 'Roboto', sans-serif;
     color: #fff;
     font-size: 23px;
-    margin: 70px 0 0 30px;
+    margin: 70px 0 0 220px;
     font-weight: 700;
 }
 
@@ -647,11 +646,12 @@ margin-top: 150px;
 }
 
 .footer .sociais{
-    margin-left: 40px
+    margin-left: 40px;
+    width: 220px
 }
 
 .container {
-    margin-top: 40px auto;
+    margin-top: 50px;
     max-width: 99vw;
 }
 
@@ -722,7 +722,7 @@ table tr td p{
 }
 hr{
     border: 1px solid #8844EE;
-    width: 1200px;
+    width: 1000px;
     margin: 100px auto 0;
 }
 main .day{
@@ -731,6 +731,11 @@ main .day{
     color:var(--green);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+}
+.header-prog .flat{
+    width: 40%;
+    height: 400px;
+    margin: 150px 0 0 0;
 }
 ::-webkit-scrollbar {
   width: 10px;
