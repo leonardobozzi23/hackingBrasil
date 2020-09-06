@@ -292,12 +292,12 @@
 
 @media screen and (max-width: 455px) {
     .palestrantes {
-        margin: 15px auto 0;
+        margin: 15px 95px 0;
     }
 
     .palestrantes-nome {
         width: 1050px;
-        margin: 0 20%;
+        margin: 0 39%;
 
     }
 
