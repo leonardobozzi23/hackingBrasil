@@ -1,204 +1,321 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/modal-responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/newstyle.css" />
+    <link rel="stylesheet" href="css/newresponsive.css" />
+    <link rel="stylesheet" href="css/modal-responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>HackingBrasil</title>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <header>
-            <div class="header-container">
-                <div class="logo">
-                    <img src="img/logo.png">
-                </div>
-                <div class="info">
-                    <img src="img/assets_calendario.png">
-                    <img src="img/assets_info.png">
-                </div>
-            </div>
-            <div class="conteudo-header">
-                <p> Primeiro evento 100% on-line na área da programação, com os melhores profissionais da área.<br><br>
-                    Serão palestras sobre InfoSec, Web Development, Software Engineering,
-                    Infraestrutura, Mercado de trabalho e entre outros nichos da tecnologia
-                    mais atual no mercado de tecnologia!</p>
-                <div class="inscricao">
-                    <img src="img/flatheader.png">
-                    <a href="#modalInscrever"><button onClick="popupOnInscrever()">FAÇA_SUA_INSCRIÇÃO</button></a>
+  <body>
+    <input type="checkbox" id="check" />
+    <label for="check" id="button-drop"><img src="img/menu.png" /></label>
+    <header>
+      <div class="header" id="vem-header">
+        <img class="logo" src="img/logo.png" />
+        <nav class="menu">
+          <ul>
+            <li><a href="#oquee">O QUE É</a></li>
+            <li><a href="#obj">OBJETIVO</a></li>
+            <li><a href="#conhe">CONHECIMENTO</a></li>
+            <li><a href="#">PROGRAMAÇÃO</a></li>
+            <li class="button-menu" onClick="popupOnInscrever()">
+              <a href="#">INSCREVA-SE</a>
+            </li>
+            <li><label for="check" id="close-drop">CLOSE</label></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="main">
+      <div class="main-call">
+        <h1>Maior evento de programação e desenvolvimento do Brasil.</h1>
+        <p>< programe_seu_futuro /></p>
+      </div>
+      <div class="main-sobre">
+        <img src="img/flatheader.png" />
 
-                </div>
-            </div>
-        </header>
-        <!--Inicio dos modal's-->
-        <div class="modal" id="modal">
-            <div class="escrita" id="toAlex">
-                <img src="img/alex.png">
-                <h2>Alex Teixeira</h2>
-                <p>
-                    <19 anos, São Roque/SP />
-                </p>
-                <br>
-                <br>
-                <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum orci in velit, integer convallis adipiscing. Arcu blandit in diam donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit. Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel iaculis vitae quis.</p>
-                <span onClick="popupOffAlex()">FECHAR</span>
-            </div>
-        </div>
+        <div class="texto-main-sobre">
+          <p>Um evento de programação com aulas de especialistas da área.</p>
 
-        <!--Modal Juarez -->
-        <div class="modal" id="modalJuarez">
-            <div class="escritaJuarez" id="toJuarez">
-                <img src="img/juarez.png">
-                <h2>Juarez Caetano </h2>
-                <p>
-                    <19 anos, São Roque/SP />
-                </p>
-                <br>
-                <br>
-                <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum orci in velit, integer convallis adipiscing. Arcu blandit in diam donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit. Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel iaculis vitae quis.</p>
-                <span onClick="popupOffJuarez()">FECHAR</span>
-            </div>
-        </div>
+          <p>
+            Projetos reais criados do 0 e avaliados por quem realmente entende
+          </p>
 
-        <!--Modal Leonardo -->
-        <div class="modal" id="modalLeonardo">
-            <div class="escritaLeonardo" id="toLeonardo">
-                <img src="img/leonardo.png">
-                <h2>Leonardo Bozzi</h2>
-                <p>
-                    <20 anos, São Roque/SP />
-                </p>
-                <br>
-                <br>
-                <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum orci in velit, integer convallis adipiscing. Arcu blandit in diam donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit. Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel iaculis vitae quis.</p>
-                <span onClick="popupOffLeonardo()">FECHAR</span>
-            </div>
+          <p>Oportunidade de vaga de emprego dentro do evento</p>
         </div>
-        <!--Modal Caio -->
-        <div class="modal" id="modalCaio">
-            <div class="escritaCaio" id="toCaio">
-                <img src="img/caio.png">
-                <h2>Caio Oliveira</h2>
-                <p>
-                    <19 anos, São Roque/SP />
-                </p>
-                <br>
-                <br>
-                <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum orci in velit, integer convallis adipiscing. Arcu blandit in diam donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit. Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel iaculis vitae quis.</p>
-                <span onClick="popupOffCaio()">FECHAR</span>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!--Modal Guilherme -->
-        <div class="modal" id="modalGuilherme">
-            <div class="escritaGuilherme" id="toGuilherme">
-                <img src="img/guilherme.png">
-                <h2>Guilherme Moreira</h2>
-                <p>
-                    <19 anos, São Roque/SP />
-                </p>
-                <br>
-                <br>
-                <p class="sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum orci in velit, integer convallis adipiscing. Arcu blandit in diam donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit. Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel iaculis vitae quis.</p>
-                <span onClick="popupOffGuilherme()">FECHAR</span>
-            </div>
-        </div>
-        <!--Modal Inscrever -->
-        <div class="modal" id="modalInscrever">
-            <div class="inputInscrever">
-                <legend>Nome completo:</legend>
-                <input type="text">
-                <legend>E-Mail:</legend>
-                <input type="email">
-                <div class="confirm">
-                    <button onClick="popupOffInscrever(); popupOnParabens()">INSCREVER-SE</button>
-                </div>
-                <span onClick="popupOffInscrever()">FECHAR</span>
-            </div>
-        </div>
+    <div class="about">
+      <div class="info">
+        <img src="img/assets_info.png" />
+        <p>Palestras ao vivo e gravadas</p>
+      </div>
+      <div class="dias">
+        <img src="img/assets_calendario.png" />
+        <p>20, 21, 22, 23 e 24 de setembro</p>
+      </div>
+      <div class="duracao">
+        <img src="img/assets_calendario.png" />
+        <p>Todos os dias</p>
+      </div>
+    </div>
 
-        <!--Modal Congratulations-->
+    <!--Inicio dos modal's-->
+    <div class="modal" id="modal">
+      <div class="escrita" id="toAlex">
+        <img src="img/alex.png" />
+        <h2>Alex Teixeira</h2>
+        <p><19 anos, São Roque/SP /></p>
+        <br />
+        <br />
+        <p class="sobre">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
+          vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti
+          ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum
+          orci in velit, integer convallis adipiscing. Arcu blandit in diam
+          donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper
+          mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque
+          accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas
+          fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit.
+          Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat
+          arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel
+          iaculis vitae quis.
+        </p>
+        <span onClick="popupOffAlex()">FECHAR</span>
+      </div>
+    </div>
 
-        <div class="modal" id="modalParabens">
-            <div class="escritaParabens">
-                <h3>Cadastro realizado com sucesso!</h3>
-                <h2>PARABENS!</h2>
-                <p>“O primeiro passo para o sucesso se chama TENTAR, apenas assim você estará pronto para o próximo nível. ”</p>
-                <span onClick="popupOffParabens()">FECHAR</span>
+    <!--Modal Juarez -->
+    <div class="modal" id="modalJuarez">
+      <div class="escritaJuarez" id="toJuarez">
+        <img src="img/juarez.png" />
+        <h2>Juarez Caetano</h2>
+        <p><19 anos, São Roque/SP /></p>
+        <br />
+        <br />
+        <p class="sobre">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
+          vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti
+          ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum
+          orci in velit, integer convallis adipiscing. Arcu blandit in diam
+          donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper
+          mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque
+          accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas
+          fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit.
+          Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat
+          arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel
+          iaculis vitae quis.
+        </p>
+        <span onClick="popupOffJuarez()">FECHAR</span>
+      </div>
+    </div>
 
-            </div>
-        </div>
-        <!--Fim dos Modal's-->
-        <h1>Palestrantes:</h1>
-        <div class="palestra">
-            <div class="palestrantes">
-                <a href="#tolJuarez"><img onClick="popupOnJuarez()" src="img/juarez.png"></a>
-                <a href="#toGuilherme"><img onClick="popupOnGuilherme()" src="img/guilherme.png"></a>
-                <a href="#toLeonardo"><img onClick="popupOnLeonardo()" src="img/leonardo.png"></a>
-                <a href="#toCaio"><img onClick="popupOnCaio()" src="img/caio.png"></a>
-                <a href="#toAlex"><img onClick="popupOnAlex()" src="img/alex.png"></a>
-            </div>
-        </div>
+    <!--Modal Leonardo -->
+    <div class="modal" id="modalLeonardo">
+      <div class="escritaLeonardo" id="toLeonardo">
+        <img src="img/leonardo.png" />
+        <h2>Leonardo Bozzi</h2>
+        <p><20 anos, São Roque/SP /></p>
+        <br />
+        <br />
+        <p class="sobre">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
+          vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti
+          ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum
+          orci in velit, integer convallis adipiscing. Arcu blandit in diam
+          donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper
+          mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque
+          accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas
+          fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit.
+          Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat
+          arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel
+          iaculis vitae quis.
+        </p>
+        <span onClick="popupOffLeonardo()">FECHAR</span>
+      </div>
+    </div>
+    <!--Modal Caio -->
+    <div class="modal" id="modalCaio">
+      <div class="escritaCaio" id="toCaio">
+        <img src="img/caio.png" />
+        <h2>Caio Oliveira</h2>
+        <p><19 anos, São Roque/SP /></p>
+        <br />
+        <br />
+        <p class="sobre">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
+          vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti
+          ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum
+          orci in velit, integer convallis adipiscing. Arcu blandit in diam
+          donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper
+          mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque
+          accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas
+          fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit.
+          Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat
+          arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel
+          iaculis vitae quis.
+        </p>
+        <span onClick="popupOffCaio()">FECHAR</span>
+      </div>
+    </div>
 
-        <div class="palestrantes-nome">
+    <!--Modal Guilherme -->
+    <div class="modal" id="modalGuilherme">
+      <div class="escritaGuilherme" id="toGuilherme">
+        <img src="img/guilherme.png" />
+        <h2>Guilherme Moreira</h2>
+        <p><19 anos, São Roque/SP /></p>
+        <br />
+        <br />
+        <p class="sobre">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
+          vestibulum, fringilla feugiat vulputate ultricies nam. Magna potenti
+          ut a faucibus duis. Aliquam ipsum et, at lorem sapien. Tortor interdum
+          orci in velit, integer convallis adipiscing. Arcu blandit in diam
+          donec tristique. Massa viverra velit mi eu tincidunt. Ullamcorper
+          mattis sit dolor mauris iaculis aliquam tincidunt viverra. Scelerisque
+          accumsan, turpis rhoncus varius ipsum a. Tortor ac ut maecenas
+          fringilla nam. Nulla sit nibh erat sit et blandit amet lacinia velit.
+          Lectus faucibus tincidunt pellentesque leo hendrerit ut risus erat
+          arcu. Feugiat ut dignissim velit massa ipsum. Rhoncus posuere diam vel
+          iaculis vitae quis.
+        </p>
+        <span onClick="popupOffGuilherme()">FECHAR</span>
+      </div>
+    </div>
+    <!--Modal Inscrever -->
+    <div class="modal" id="modalInscrever">
+      <div class="inputInscrever">
+        <legend>Nome completo:</legend>
+        <input type="text" />
+        <legend>E-Mail:</legend>
+        <input type="email" />
+        <div class="confirm">
+          <button onClick="popupOffInscrever(); popupOnParabens()">
+            INSCREVER-SE
+          </button>
+        </div>
+        <span onClick="popupOffInscrever()">FECHAR</span>
+      </div>
+    </div>
 
-            <p>ANALISTA: Juarez</p>
-            <p>CTO: Guilherme</p>
-            <p>DEV: Leonardo</p>
-            <p>DEV-SENIOR: Caio</p>
-            <p>UI-DESIGNER: Alex</p>
+    <!--Modal Congratulations-->
+
+    <div class="modal" id="modalParabens">
+      <div class="escritaParabens">
+        <h3>Cadastro realizado com sucesso!</h3>
+        <h2>PARABENS!</h2>
+        <p>
+          “O primeiro passo para o sucesso se chama TENTAR, apenas assim você
+          estará pronto para o próximo nível. ”
+        </p>
+        <span onClick="popupOffParabens()">FECHAR</span>
+      </div>
+    </div>
+    <!--Fim dos Modal's-->
+    <h1>Palestrantes:</h1>
+    <div class="palestra">
+      <div class="palestrantes">
+        <div class="juarez">
+          <a href="#tolJuarez"
+            ><img onClick="popupOnJuarez()" src="img/juarez.png"
+          /></a>
+          <p>ANALISTA: Juarez</p>
         </div>
-        <div class="container-prog">
-            <div class="goToProg">
-                <a href="programacao.html"><button>PROGRAMAÇÃO_DO_EVENTO</button></a>
-            </div>
+        <div class="guilherme">
+          <a href="#toGuilherme"
+            ><img onClick="popupOnGuilherme()" src="img/guilherme.png"
+          /></a>
+          <p>CTO: Guilherme</p>
         </div>
-        <div class="sobre">
-            <hr>
-            <h1>O que é HackingBrasil?</h1>
-            <hr class="horizontal">
-            <div class="evento">
-                <img src="img/flat_2.png">
-                <div class="texto-evento">
-                    <h2>Maior evento ligado a programação e inovações do mundo da tecnologia.</h2>
-                    <p>Uma semana de palestras e aulas com os melhores profissionais do mercado.</p>
-                </div>
-            </div>
-            <h1>Qual o objetivo do evento?</h1>
-            <hr class="horizontal">
-            <div class="objetivo">
-                <img src="img/flat_objetivo.png">
-                <div class="texto-objetivo">
-                    <h2>Uma semana de puro aprendizado, para que você possa alcançar seu próximo nivel.</h2>
-                    <p>Além de colocar a mão na massa e desenvolver junto com a gente.</p>
-                </div>
-            </div>
-            <h1>Preciso saber alguma coisa?</h1>
-            <hr class="horizontal">
-            <div class="conhecimento">
-                <img src="img/flat_conhecimento.png">
-                <div class="texto-conhecimento">
-                    <h2>Não!, você aprendera na prática utilizando as melhores tecnologias.</h2>
-                    <p>As mesmas tecnologias utilizadas pela netflix, amazon, google, facebook e muitas outras .</p>
-                </div>
-            </div>
+        <div class="leonardo">
+          <a href="#toLeonardo"
+            ><img onClick="popupOnLeonardo()" src="img/leonardo.png"
+          /></a>
+          <p>DEV: Leonardo</p>
         </div>
-        <div class="footer">
-            <div class="sociais">
-                <a href="https://www.facebook.com"><img src="img/facebook_icon.png"></a>
-                <a href="https://www.instagram.com"><img src="img/instagram_icon.png"></a>
-                <a href="https://www.twitch.com"><img src="img/twich_icon.png"></a>
-                <a href="https://www.youtube.com"><img src="img/youtube_icon.png"></a>
-            </div>
+        <div class="caio">
+          <a href="#toCaio"
+            ><img onClick="popupOnCaio()" src="img/caio.png"
+          /></a>
+          <p>DEV-SENIOR: Caio</p>
         </div>
+        <div class="alex">
+          <a href="#toAlex"
+            ><img onClick="popupOnAlex()" src="img/alex.png"
+          /></a>
+          <p>UI-DESIGNER: Alex</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="sobre" id="oquee">
+      <h1>O que é HackingBrasil?</h1>
+      <hr />
+      <div class="evento">
+        <img src="img/flat_2.png" />
+        <div class="texto-evento">
+          <h2>
+            Maior evento ligado a programação e inovações do mundo da
+            tecnologia.
+          </h2>
+          <p>
+            Uma semana de palestras e aulas com os melhores profissionais do
+            mercado.
+          </p>
+        </div>
+      </div>
+      <h1>Qual o objetivo do evento?</h1>
+      <hr />
+      <div class="objetivo" id="obj">
+        <img src="img/flat_objetivo.png" />
+        <div class="texto-objetivo">
+          <h2>
+            Uma semana de puro aprendizado, para que você possa alcançar seu
+            próximo nivel.
+          </h2>
+          <p>Além de colocar a mão na massa e desenvolver junto com a gente.</p>
+        </div>
+      </div>
+      <h1>Preciso saber alguma coisa?</h1>
+      <hr />
+      <div class="conhecimento" id="conhe">
+        <img src="img/flat_conhecimento.png" />
+        <div class="texto-conhecimento">
+          <h2>
+            Não!, você aprendera na prática utilizando as melhores tecnologias.
+          </h2>
+          <p>
+            As mesmas tecnologias utilizadas pela netflix, amazon, google,
+            facebook e muitas outras .
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="sociais">
+        <a href="https://www.facebook.com"
+          ><img src="img/facebook_icon.png"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="img/instagram_icon.png"
+        /></a>
+        <a href="https://www.twitch.com"><img src="img/twich_icon.png" /></a>
+        <a href="https://www.youtube.com"><img src="img/youtube_icon.png" /></a>
+      </div>
     </div>
     <script type="text/javascript" src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
