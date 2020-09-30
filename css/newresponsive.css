@@ -1,244 +1,257 @@
 @media screen and (max-width: 1165px) {
-    .header {
-        left: -150%;
-        width: 70vw;
-        height: 80vh;
-        flex-direction: column;
-        transition: all 1s;
-        border-radius: 0 0 15px 0;
-    }
+  .header {
+    position: fixed;
+    left: -150%;
+    width: 70vw;
+    height: 80vh;
+    flex-direction: column;
+    transition: all 1s;
+    border-radius: 0 0 15px 0;
+  }
 
-    .header .menu ul li {
-        display: block;
-        margin: 30px 0;
-        text-align: center;
-    }
+  .header .menu ul li {
+    display: block;
+    margin: 50px 0;
+    text-align: center;
+  }
 
-    #button-drop {
-        display: block;
-        position: absolute;
-        left: 10%;
-        top: 40px;
-    }
+  #button-drop {
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 40px;
+  }
 
-    #button-drop img {
-        width: 50px;
-    }
+  #button-drop img {
+    width: 50px;
+  }
 
-    #check:checked~* .header {
-        left: 0;
-    }
+  #check:checked ~ * .header {
+    left: 0;
+  }
 
-    #close-drop {
-        display: block;
-        color: red;
-        border: 1px solid red;
-        padding: 7px 3px;
-        border-radius: 8px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 12px;
-    }
+  #close-drop {
+    display: block;
+    color: red;
+    border: 1px solid red;
+    padding: 7px 3px;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+  }
 
-    .sobre .evento,
-    .sobre .conhecimento,
-    .sobre .objetivo {
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+  .sobre .evento,
+  .sobre .conhecimento,
+  .sobre .objetivo {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .sobre .evento h2,
-    .sobre .conhecimento h2,
-    .sobre .objetivo h2 {
-        margin: 0 auto;
-        font-size: 26px;
-    }
+  .sobre .evento h2,
+  .sobre .conhecimento h2,
+  .sobre .objetivo h2 {
+    margin: 0 auto;
+    font-size: 26px;
+  }
 
-    .main .main-call h1 {
-        font-size: 26px;
-    }
+  .main .main-call h1 {
+    font-size: 26px;
+  }
 
-    .main .main-call p {
-        font-size: 14px;
-    }
+  .main .main-call p {
+    font-size: 14px;
+  }
 
-    .sobre h1 {
-        font-size: 26px;
-    }
+  .sobre h1 {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 1010px) {
-
-    .modal .escritaCaio .sobre,
-    .modal .escritaJuarez .sobre,
-    .modal .escritaGuilherme .sobre,
-    .modal .escrita .sobre,
-    .modal .escritaLeonardo .sobre {
-        font-size: 14px;
-    }
+  .modal .escritaCaio .sobre,
+  .modal .escritaJuarez .sobre,
+  .modal .escritaGuilherme .sobre,
+  .modal .escrita .sobre,
+  .modal .escritaLeonardo .sobre {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 745px) {
+  .modal .escritaCaio .sobre,
+  .modal .escritaJuarez .sobre,
+  .modal .escritaGuilherme .sobre,
+  .modal .escrita .sobre,
+  .modal .escritaLeonardo .sobre {
+    font-size: 12px;
+  }
 
-    .modal .escritaCaio .sobre,
-    .modal .escritaJuarez .sobre,
-    .modal .escritaGuilherme .sobre,
-    .modal .escrita .sobre,
-    .modal .escritaLeonardo .sobre {
-        font-size: 12px;
-    }
-
-    .modal .escritaCaio,
-    .modal .escritaJuarez,
-    .modal .escritaGuilherme,
-    .modal .escrita,
-    .modal .escritaLeonardo {
-        height: 75vh;
-        width: 70%;
-    }
-
-
+  .modal .escritaCaio,
+  .modal .escritaJuarez,
+  .modal .escritaGuilherme,
+  .modal .escrita,
+  .modal .escritaLeonardo {
+    height: 75vh;
+    width: 70%;
+  }
 }
 
-
 @media screen and (max-width: 665px) {
+  .palestra .palestrantes .juarez img,
+  .palestra .palestrantes .guilherme img,
+  .palestra .palestrantes .leonardo img,
+  .palestra .palestrantes .caio img,
+  .palestra .palestrantes .alex img {
+    width: 80%;
+    margin: 15px 0;
+  }
 
-    .palestra .palestrantes .juarez img,
-    .palestra .palestrantes .guilherme img,
-    .palestra .palestrantes .leonardo img,
-    .palestra .palestrantes .caio img,
-    .palestra .palestrantes .alex img {
-        width: 80%;
-        margin: 15px 0;
-    }
+  .palestra .palestrantes .juarez,
+  .palestra .palestrantes .guilherme,
+  .palestra .palestrantes .leonardo,
+  .palestra .palestrantes .caio,
+  .palestra .palestrantes .alex {
+    width: 26%;
+    font-size: 14px;
+  }
 
-    .palestra .palestrantes .juarez,
-    .palestra .palestrantes .guilherme,
-    .palestra .palestrantes .leonardo,
-    .palestra .palestrantes .caio,
-    .palestra .palestrantes .alex {
-        width: 26%;
-        font-size: 14px;
-    }
+  .main .main-call p {
+    font-size: 10px;
+  }
 
-    .main .main-call p {
-        font-size: 10px;
-    }
+  .main .main-call h1 {
+    font-size: 18px;
+    width: 100%;
+  }
 
-    .main .main-call h1 {
-        font-size: 18px;
-        width: 100%;
-    }
+  .main-sobre img {
+    width: 300px;
+  }
 
-    .main-sobre img {
-        width: 300px;
-    }
+  .footer .sociais img {
+    width: 50%;
+    margin: 0;
+  }
 
-    .footer .sociais img {
-        width: 50%;
-        margin: 0;
+  .footer .sociais {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
-    }
-
-    .footer .sociais {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .header img {
-        margin: 15px 0 0;
-        width: 50%;
-    }
+  .header img {
+    margin: 15px 0 0;
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 580px) {
-    .main .main-call h1 {
-        font-size: 18px;
-        width: 280px;
-    }
+  .main .main-call h1 {
+    font-size: 18px;
+    width: 280px;
+  }
 
-    .main-sobre img {
-        width: 200px;
-    }
+  .main-sobre img {
+    width: 200px;
+  }
 
-    .main-sobre .texto-main-sobre p {
-        font-size: 14px;
-    }
+  .main-sobre .texto-main-sobre p {
+    font-size: 14px;
+  }
 
-    .about .info,
-    .about .dias,
-    .about .duracao {
-        font-size: 14px;
-    }
+  .about .info,
+  .about .dias,
+  .about .duracao {
+    font-size: 14px;
+  }
 
-    .about .info img,
-    .about .dias img,
-    .about .duracao img {
-        width: 10%;
-    }
+  .about .info img,
+  .about .dias img,
+  .about .duracao img {
+    width: 10%;
+  }
 
-    h1 {
-        font-size: 24px;
-    }
+  h1 {
+    font-size: 24px;
+  }
 
-    .sobre h1 {
-        width: 200px;
-        font-size: 22px;
-    }
+  .sobre h1 {
+    width: 200px;
+    font-size: 22px;
+  }
 
-    .sobre .evento h2,
-    .sobre .conhecimento h2,
-    .sobre .objetivo h2 {
-        font-size: 20px;
-        width: 200px;
-        margin: 15px auto;
-    }
+  .sobre .evento h2,
+  .sobre .conhecimento h2,
+  .sobre .objetivo h2 {
+    font-size: 20px;
+    width: 200px;
+    margin: 15px auto;
+  }
 
-    .sobre .evento p,
-    .sobre .conhecimento p,
-    .sobre .objetivo p {
-        font-size: 16px;
-    }
+  .sobre .evento p,
+  .sobre .conhecimento p,
+  .sobre .objetivo p {
+    font-size: 16px;
+  }
 
-    .palestra .palestrantes .juarez,
-    .palestra .palestrantes .guilherme,
-    .palestra .palestrantes .leonardo,
-    .palestra .palestrantes .caio,
-    .palestra .palestrantes .alex {
-        font-size: 10px;
-        width: 110px;
-    }
+  .palestra .palestrantes .juarez,
+  .palestra .palestrantes .guilherme,
+  .palestra .palestrantes .leonardo,
+  .palestra .palestrantes .caio,
+  .palestra .palestrantes .alex {
+    font-size: 10px;
+    width: 110px;
+  }
 }
-
+@media screen and (max-width: 425px) {
+  main table tr td p {
+    font-size: 14px;
+  }
+  main .day {
+    font-size: 18px;
+  }
+  main table {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 355px) {
-
-    .modal .escritaCaio,
-    .modal .escritaJuarez,
-    .modal .escritaGuilherme,
-    .modal .escrita,
-    .modal .escritaLeonardo {
-        height: 75vh;
-        width: 80%;
-        left: 10%;
-        font-size: 10px;
-    }
+  .modal .escritaCaio,
+  .modal .escritaJuarez,
+  .modal .escritaGuilherme,
+  .modal .escrita,
+  .modal .escritaLeonardo {
+    height: 75vh;
+    width: 80%;
+    left: 10%;
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 320px) {
-
-    .modal .escritaCaio,
-    .modal .escritaJuarez,
-    .modal .escritaGuilherme,
-    .modal .escrita,
-    .modal .escritaLeonardo {
-        height: 75vh;
-        width: 80%;
-        left: 10%;
-        top: 2%;
-        font-size: 8px;
-    }
-
-
+  .modal .escritaCaio,
+  .modal .escritaJuarez,
+  .modal .escritaGuilherme,
+  .modal .escrita,
+  .modal .escritaLeonardo {
+    height: 75vh;
+    width: 80%;
+    left: 10%;
+    top: 2%;
+    font-size: 8px;
+  }
+  .header .menu ul li {
+    display: block;
+    margin: 30px 0;
+  }
+  main table tr td p {
+    font-size: 14px;
+  }
+  main table {
+    width: 200px;
+  }
+  main .day {
+    font-size: 18px;
+  }
 }

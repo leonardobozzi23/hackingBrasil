@@ -1,201 +1,248 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/modal-responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/newstyle.css" />
+    <link rel="stylesheet" href="css/newresponsive.css" />
+    <link rel="stylesheet" href="css/modal-responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>HackingBrasil</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-prog">
-            <a href="index.html"><img src="img/logo.png"></a>
-            <img src="img/programacaoheader.png" class="flat">
+      <div class="header-prog">
+        <a href="index.html"><img src="img/logo.png" /></a>
+        <img src="img/programacaoheader.png" class="flat" />
+      </div>
+      <div class="subs">
+        <a href="#modalInscrever"
+          ><button onClick="popupOnInscrever()">FAÇA_SUA_INSCRIÇÃO</button></a
+        >
+      </div>
+      <!--Modal Inscrever -->
+      <div class="modal" id="modalInscrever">
+        <div class="inputInscrever">
+          <legend>Nome completo:</legend>
+          <input type="text" />
+          <legend>E-Mail:</legend>
+          <input type="email" />
+          <div class="confirm">
+            <button onClick="popupOffInscrever(); popupOnParabens()">
+              INSCREVER-SE
+            </button>
+          </div>
+          <span onClick="popupOffInscrever()">FECHAR</span>
         </div>
-        <div class="subs">
-            <a href="#modalInscrever"><button onClick="popupOnInscrever()">FAÇA_SUA_INSCRIÇÃO</button></a>
+      </div>
 
+      <!--Modal Congratulations-->
+
+      <div class="modal" id="modalParabens">
+        <div class="escritaParabens">
+          <h3>Cadastro realizado com sucesso!</h3>
+          <h2>PARABENS!</h2>
+          <p>
+            “O primeiro passo para o sucesso se chama TENTAR, apenas assim você
+            estará pronto para o próximo nível. ”
+          </p>
+          <span onClick="popupOffParabens()">FECHAR</span>
         </div>
-        <!--Modal Inscrever -->
-        <div class="modal" id="modalInscrever">
-            <div class="inputInscrever">
-                <legend>Nome completo:</legend>
-                <input type="text">
-                <legend>E-Mail:</legend>
-                <input type="email">
-                <div class="confirm">
-                    <button onClick="popupOffInscrever(); popupOnParabens()">INSCREVER-SE</button>
-                </div>
-                <span onClick="popupOffInscrever()">FECHAR</span>
-            </div>
-        </div>
-
-        <!--Modal Congratulations-->
-
-        <div class="modal" id="modalParabens">
-            <div class="escritaParabens">
-                <h3>Cadastro realizado com sucesso!</h3>
-                <h2>PARABENS!</h2>
-                <p>“O primeiro passo para o sucesso se chama TENTAR, apenas assim você estará pronto para o próximo nível. ”</p>
-                <span onClick="popupOffParabens()">FECHAR</span>
-
-            </div>
-        </div>
-        <!--Fim dos Modal's-->
-        <hr>
+      </div>
+      <!--Fim dos Modal's-->
+      <hr />
     </header>
     <main>
-        <h1>
-            NOSSA_PROGRAMAÇÃO
-        </h1>
-        <p class="day">1ºDIA</p>
-        <table>
-            <tr>
-                <td>
-                    <p>10h</p>- Inicio da HackingBrasil com palestra de Leonardo Bozzi e Alex Teixeira explicando sobre o evento.
-                </td>
-                <td>
-                    <p>11h</p>- Palestra com Caio sobre a linguagem JavaScript no Brasil.
-                </td>
-                <td>
-                    <p>12h</p>- Palestra com Guilherme sobre comunidades na internet.
-                </td>
-                <td>
-                    <p>13h</p>- Palestra com Juarez sobre PHP e suas vantagens.
-                </td>
-                <td>
-                    <p>14h</p>- Aula com Alex: Desenvolvimento do site: o Design.
-                </td>
-                <td>
-                    <p>17h</p>- Aula com Leonardo: Desenvolvimento do site: FrontEnd.
-                </td>
-                <td>
-                    <p>20h</p>- Aula dupla com Caio e Juarez: BackEnd como um todo!
-                </td>
-            </tr>
-        </table>
-        <p class="day">2ºDIA</p>
-        <table>
-            <tr>
-                <td>
-                    <p>4h</p>- Hora da empresa: WebSoft.
-                </td>
-                <td>
-                    <p>6h</p>- Cafe e Código: revisão do primeiro site.
-                </td>
-                <td>
-                    <p>10h</p>- Invista em você mesmo (Palestra de meta de vida).
-                </td>
-                <td>
-                    <p>12h</p>- Hacking com G. Pato.
-                </td>
-                <td>
-                    <p>16h</p>- Mercado de games.
-                </td>
-                <td>
-                    <p>20h</p>- Hora da empresa: YouBug.
-                </td>
-                <td>
-                    <p>22h</p>- Maratona 10h de código com Guilherme.
-                </td>
-            </tr>
-        </table>
-        <p class="day">3ºDIA</p>
-        <table>
-            <tr>
-                <td>
-                    <p>8h</p>- Hora da empresa: CryDev.
-                </td>
-                <td>
-                    <p>10h</p>- Cafe e Código: revisão da maratona.
-                </td>
-                <td>
-                    <p>14h</p>- Mercado das StartUps.
-                </td>
-                <td>
-                    <p>16h</p>- RocketLeads.
-                </td>
-                <td>
-                    <p>18h</p>- DevCast: Conversa ao vivo.
-                </td>
-                <td>
-                    <p>20h</p>- Hora da empresa: MicroUnix.
-                </td>
-                <td>
-                    <p>22h</p>- Lógica de programação na prática.
-                </td>
-            </tr>
-        </table>
-        <p class="day">4ºDIA</p>
-        <table>
-            <tr>
-                <td>
-                    <p>0h</p>- if 0h=0h {start this podcast}.
-                </td>
-                <td>
-                    <p>2h</p>- Iniciação ao backend moderno (NodeJS e mongoDB).
-                </td>
-                <td>
-                    <p>8h</p>- Cafe e Código: revisão Node e Mongo.
-                </td>
-                <td>
-                    <p>12h</p>- Felipe Destrumps.
-                </td>
-                <td>
-                    <p>15h</p>- Hora da empresa: FigmaShop.
-                </td>
-                <td>
-                    <p>17h</p>- Recriando a UI do Youtube com Leonardo.
-                </td>
-                <td>
-                    <p>21h</p>- Será que roda? com Juarez.
-                </td>
-                <td>
-                    <p>23h</p>- Fala com o dev: interaçoes e perguntas.
-                </td>
-            </tr>
-        </table>
-        <p class="day">ULTIMO DIA</p>
-        <table>
-            <tr>
-                <td>
-                    <p>1h</p>- horaum: Design descomplicado com Alex.
-                </td>
-                <td>
-                    <p>4h</p>- A melhor linguagem é a que te paga! (Palestra motivacional).
-                </td>
-                <td>
-                    <p>7h</p>- Tecnologias no mundo todo com Caio e DJ Dev.
-                </td>
-                <td>
-                    <p>9h</p>- Pré despedida: Agradecimentos!
-                </td>
-                <td>
-                    <p>10h</p>- Sorteios dos itens e resultados das atividades
-                </td>
-                <td>
-                    <p>17h</p>- Live de despedida conversanso e tirando duvidas com nossos expecialistas.
-                </td>
-
-            </tr>
-        </table>
+      <h1>NOSSA_PROGRAMAÇÃO</h1>
+      <p class="day">1ºDIA</p>
+      <table>
+        <tr>
+          <td>
+            <p>10h</p>
+            - Inicio da HackingBrasil com palestra de Leonardo Bozzi e Alex
+            Teixeira explicando sobre o evento.
+          </td>
+          <td>
+            <p>11h</p>
+            - Palestra com Caio sobre a linguagem JavaScript no Brasil.
+          </td>
+          <td>
+            <p>12h</p>
+            - Palestra com Guilherme sobre comunidades na internet.
+          </td>
+          <td>
+            <p>13h</p>
+            - Palestra com Juarez sobre PHP e suas vantagens.
+          </td>
+          <td>
+            <p>14h</p>
+            - Aula com Alex: Desenvolvimento do site: o Design.
+          </td>
+          <td>
+            <p>17h</p>
+            - Aula com Leonardo: Desenvolvimento do site: FrontEnd.
+          </td>
+          <td>
+            <p>20h</p>
+            - Aula dupla com Caio e Juarez: BackEnd como um todo!
+          </td>
+        </tr>
+      </table>
+      <p class="day">2ºDIA</p>
+      <table>
+        <tr>
+          <td>
+            <p>4h</p>
+            - Hora da empresa: WebSoft.
+          </td>
+          <td>
+            <p>6h</p>
+            - Cafe e Código: revisão do primeiro site.
+          </td>
+          <td>
+            <p>10h</p>
+            - Invista em você mesmo (Palestra de meta de vida).
+          </td>
+          <td>
+            <p>12h</p>
+            - Hacking com G. Pato.
+          </td>
+          <td>
+            <p>16h</p>
+            - Mercado de games.
+          </td>
+          <td>
+            <p>20h</p>
+            - Hora da empresa: YouBug.
+          </td>
+          <td>
+            <p>22h</p>
+            - Maratona 10h de código com Guilherme.
+          </td>
+        </tr>
+      </table>
+      <p class="day">3ºDIA</p>
+      <table>
+        <tr>
+          <td>
+            <p>8h</p>
+            - Hora da empresa: CryDev.
+          </td>
+          <td>
+            <p>10h</p>
+            - Cafe e Código: revisão da maratona.
+          </td>
+          <td>
+            <p>14h</p>
+            - Mercado das StartUps.
+          </td>
+          <td>
+            <p>16h</p>
+            - RocketLeads.
+          </td>
+          <td>
+            <p>18h</p>
+            - DevCast: Conversa ao vivo.
+          </td>
+          <td>
+            <p>20h</p>
+            - Hora da empresa: MicroUnix.
+          </td>
+          <td>
+            <p>22h</p>
+            - Lógica de programação na prática.
+          </td>
+        </tr>
+      </table>
+      <p class="day">4ºDIA</p>
+      <table>
+        <tr>
+          <td>
+            <p>0h</p>
+            - if 0h=0h {start this podcast}.
+          </td>
+          <td>
+            <p>2h</p>
+            - Iniciação ao backend moderno (NodeJS e mongoDB).
+          </td>
+          <td>
+            <p>8h</p>
+            - Cafe e Código: revisão Node e Mongo.
+          </td>
+          <td>
+            <p>12h</p>
+            - Felipe Destrumps.
+          </td>
+          <td>
+            <p>15h</p>
+            - Hora da empresa: FigmaShop.
+          </td>
+          <td>
+            <p>17h</p>
+            - Recriando a UI do Youtube com Leonardo.
+          </td>
+          <td>
+            <p>21h</p>
+            - Será que roda? com Juarez.
+          </td>
+          <td>
+            <p>23h</p>
+            - Fala com o dev: interaçoes e perguntas.
+          </td>
+        </tr>
+      </table>
+      <p class="day">ULTIMO DIA</p>
+      <table>
+        <tr>
+          <td>
+            <p>1h</p>
+            - horaum: Design descomplicado com Alex.
+          </td>
+          <td>
+            <p>4h</p>
+            - A melhor linguagem é a que te paga! (Palestra motivacional).
+          </td>
+          <td>
+            <p>7h</p>
+            - Tecnologias no mundo todo com Caio e DJ Dev.
+          </td>
+          <td>
+            <p>9h</p>
+            - Pré despedida: Agradecimentos!
+          </td>
+          <td>
+            <p>10h</p>
+            - Sorteios dos itens e resultados das atividades
+          </td>
+          <td>
+            <p>17h</p>
+            - Live de despedida conversanso e tirando duvidas com nossos
+            expecialistas.
+          </td>
+        </tr>
+      </table>
     </main>
     <div class="footer">
-        <div class="sociais">
-            <a href="https://www.facebook.com"><img src="img/facebook_icon.png"></a>
-            <a href="https://www.instagram.com"><img src="img/instagram_icon.png"></a>
-            <a href="https://www.twitch.com"><img src="img/twich_icon.png"></a>
-            <a href="https://www.youtube.com"><img src="img/youtube_icon.png"></a>
-        </div>
+      <div class="sociais">
+        <a href="https://www.facebook.com"
+          ><img src="img/facebook_icon.png"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="img/instagram_icon.png"
+        /></a>
+        <a href="https://www.twitch.com"><img src="img/twich_icon.png" /></a>
+        <a href="https://www.youtube.com"><img src="img/youtube_icon.png" /></a>
+      </div>
     </div>
-    
-    <script type="text/javascript" src="js/scriptpage2.js"></script>
-</body>
 
+    <script type="text/javascript" src="js/scriptpage2.js"></script>
+  </body>
 </html>
