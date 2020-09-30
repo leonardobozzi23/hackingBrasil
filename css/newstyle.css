@@ -652,20 +652,19 @@ main table tr td {
   display: inline;
   color: #dededc;
   font-family: "Roboto", sans-serif;
-  text-align: center;
 }
 main table tr td p {
   margin: 45px 0;
   color: var(--button-primary);
   font-size: 18px;
   font-weight: 700;
-  text-align: center;
 }
 main .day {
   color: var(--green);
   font-family: "Roboto", sans-serif;
   margin: 45px 0;
   font-size: 24px;
+  align-self: center;
 }
 
 main table {
